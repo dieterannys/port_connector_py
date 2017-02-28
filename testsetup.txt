@@ -1,0 +1,25 @@
+#Wall
+##Sockets:2,5,4,1,3
+#TV_Set
+##TV:AudioOut,Power,USB,HDMI
+##ChromeCast:HDMI,USB
+##Speaker R:Power,In
+##Mixer:Power,In 1,In 2,In 3,Out 1,Out 2,In 5,In 4
+##Speaker L:Power,In
+#Guitar_Set
+##Guitar:Output
+##Pedalboard:Power,Output,Input
+Guitar_Set,Guitar,Output,Guitar_Set,Pedalboard,Input
+TV_Set,ChromeCast,HDMI,TV_Set,TV,HDMI
+TV_Set,ChromeCast,USB,TV_Set,TV,USB
+TV_Set,Mixer,Out 1,TV_Set,Speaker L,In
+TV_Set,Mixer,Out 2,TV_Set,Speaker R,In
+Guitar_Set,Pedalboard,Output,TV_Set,Mixer,In 4
+Guitar_Set,Pedalboard,Output,TV_Set,Mixer,In 5
+TV_Set,TV,AudioOut,TV_Set,Mixer,In 2
+TV_Set,TV,AudioOut,TV_Set,Mixer,In 3
+TV_Set,TV,Power,Wall,Sockets,1
+Guitar_Set,Pedalboard,Power,Wall,Sockets,5
+TV_Set,Mixer,Power,Wall,Sockets,2
+TV_Set,Speaker L,Power,Wall,Sockets,3
+TV_Set,Speaker R,Power,Wall,Sockets,4

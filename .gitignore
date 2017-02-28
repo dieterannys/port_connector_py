@@ -1,0 +1,8 @@
+build
+dist
+bk
+.idea
+__pycache__
+*.svg
+nhp_surveyroom.txt
+*.spec
